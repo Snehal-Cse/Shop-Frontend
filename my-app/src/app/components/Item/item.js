@@ -1,9 +1,10 @@
+"use client"
 import React from 'react'
 export default function Item(props){
   return (
    <div className="">
     <div className="">
-        <img src={props.image} className="h-80 w-72 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-200 ..."/>
+       <a href={`/product?id=${props.id}`}> <img src={props.image} className="h-80 w-72 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-200 ..." onClick={window.scrollTo(0,0)}/></a>
     </div>
     <p className="flex flex-row justify-center font-semibold text-base pt-3">{props.desc}</p>
     <div className ="flex flex-row justify-evenly">

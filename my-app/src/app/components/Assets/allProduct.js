@@ -34,7 +34,7 @@ const AllProduct = [
     {
         id: 5,
         image: "https://images.bewakoof.com/uploads/grid/app/types-of-t-shirts-for-men-bewakoof-blog-Scoop-Neck-Style-1612353777.jpg",
-        desc:"Green coloured casual tshirt ",
+        desc:"Green coloured casual tshirt",
         category:"men",
         newPrice: 750,
         oldPrice:1250
@@ -197,7 +197,7 @@ const AllProduct = [
     id: 25,
     image: "https://cdn.shopify.com/s/files/1/0281/7544/files/1200x1200png-S24MDoGoodTShirtFatigue_1_700x.png?v=1706643178",
     category:"men",
-    desc: "Do good olive green tshirt",
+    desc: "Do good olive green Tshirt ",
     newPrice: 1200,
     oldPrice:2000
 },

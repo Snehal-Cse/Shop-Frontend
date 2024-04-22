@@ -7,7 +7,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 function page() {
   const womenProducts = AllProduct.filter((item) => item.category === "women" ).map(item => (
     <Item
-      key={item.id} 
+      id={item.id} 
       image={item.image}
       desc={item.desc}
       newPrice={item.newPrice} 

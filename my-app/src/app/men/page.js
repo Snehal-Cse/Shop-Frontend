@@ -7,14 +7,13 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 export default function page() {
   const menProducts = AllProduct.filter((item) =>item.category === "men" ).map((item) => (
     <Item
-      key={item.id} 
+      id={item.id} 
       image={item.image}
       desc={item.desc}
       newPrice={item.newPrice} 
       oldPrice={item.oldPrice} 
     />
   ));
-
   return (
     <div className='h-full w-screen flex flex-col items-center justify-center '>
       <img src='https://smshops.online/wp-content/uploads/2020/12/men-fashion.jpg' className="w-full "/>

@@ -28,7 +28,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="w-screen flex flex-row justify-between h-24 items-center p-8 ">
+    <div className="w-full flex flex-row justify-between h-24 items-center p-8 ">
      <div className = "h-20 w-20">
      <img src = "/logoImp.jpg"/>
      </div>
@@ -41,7 +41,7 @@ export default function Header() {
      <div className = "flex flex-row gap-8 items-center">
      <div className=""><ThemeSwitcher /></div>
      <FaCartShopping className = "text-2xl"/> 
-    <a href="/login"> <Button radius="full" className="bg-white border-2 border-black font-bold text-black">
+    <a href="/signup"> <Button radius="full" className="bg-white border-2 border-black font-bold text-black">
          Login
        </Button></a>
      </div>
