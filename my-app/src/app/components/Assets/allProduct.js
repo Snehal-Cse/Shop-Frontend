@@ -283,7 +283,7 @@ const AllProduct = [
     oldPrice:2000
 },
 { 
-    id: 34,
+    id: 36,
     image: "https://fashiondream.co.in/cdn/shop/products/P1678886_20copy.jpg?v=1665213890&width=353",
     category:"kids",
     desc: "Green kurta set",

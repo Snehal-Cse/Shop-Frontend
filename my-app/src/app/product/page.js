@@ -17,7 +17,8 @@ export default function Page() {
   return (
     <div className='flex flex-col h-full w-full'>
  <Breadcrum category={category} desc={desc} />
-   <ProductDisplay image = {product.image} 
+   <ProductDisplay id = {product.id}
+   image = {product.image} 
       desc = {product.desc}
       oldPrice = {product.oldPrice}
       newPrice = {product.newPrice}

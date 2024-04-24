@@ -2,7 +2,7 @@
 import "./globals.css";
 import { Roboto } from "next/font/google";
 import PageWrapper from '@/app/components/Utils/pagewrapper';
-
+import Context from "./components/Context/context";
 const roboto = Roboto({
   weight: ['400', '700'],
   style: ['normal', 'italic'],
@@ -21,7 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.variable}>
-          <PageWrapper>{children}</PageWrapper>
+      <Context>
+          <PageWrapper>
+          
+            {children}
+           
+            </PageWrapper>
+            </Context>
           </body>
     </html>
   );

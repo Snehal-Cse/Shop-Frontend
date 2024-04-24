@@ -1,10 +1,16 @@
-import React, { useEffect } from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 import { Button, ButtonGroup } from "@nextui-org/react";
 import { ThemeSwitcher } from "../ThemeSwitcher/themeSwitch";
 import { FaCartShopping } from "react-icons/fa6";
+import { cartState } from "../Context/context";
 
 export default function Header() {
-  const [menu, setMenu] = React.useState("");
+  const [menu, setMenu] = useState("");
+  // ---------------------------------------------------------------------------------------------------------------------
+  const { state:{cart} } = cartState();
+  
+//----------------------------------------------------------------------------------------------------------------------
 
   useEffect(() => {
     const pathName = window.location.pathname;
@@ -40,7 +46,10 @@ export default function Header() {
      </div>
      <div className = "flex flex-row gap-8 items-center">
      <div className=""><ThemeSwitcher /></div>
-     <FaCartShopping className = "text-2xl"/> 
+     <div className=" relative">
+     <a href = "/cartPage"><FaCartShopping className = "text-2xl" /> </a>
+     <div className = "w-min  h-min p-0.5 bg-red-600 items-center text-xs justify-center absolute mt-[-2.3rem] ml-[1rem] text-center rounded-full text-white">{cart.length}</div>
+     </div>
     <a href="/signup"> <Button radius="full" className="bg-white border-2 border-black font-bold text-black">
          Login
        </Button></a>
@@ -48,3 +57,4 @@ export default function Header() {
     </div>
    );
  }
+

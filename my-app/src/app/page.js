@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import {Button} from "@nextui-org/react";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -6,9 +7,12 @@ import Offer from "./components/Offer/offer";
 import NewCollection from "./components/NewCollection/newCollection";
 import NewsLetter from "./components/NewsLetter/newsletter";
 
+
 export default function Page(){
+
   return(
-    <div>
+   
+    <div> 
     <div className ="w-screen h-full bg-gradient-to-r from-pink-200 to-blue-50 flex flex-row justify-around p-8 ">
       <div className ="flex flex-col justify-center gap-y-6 items-center">
         <h3 className = "font-bold font-roboto text-6xl italic subpixel-antialiased text-red-700">NEW ARRIVALS ONLY</h3>
