@@ -1,8 +1,9 @@
 import React from "react"
-import dataProduct2 from "../Assets/data2"
+
 import Item from "../Item/item"
+import AllProduct from "../Assets/allProduct"
 export default function NewCollection(){
-    const newest = dataProduct2.map((item)=>{
+    const newest = AllProduct.slice(5,13).map((item)=>{
         return <Item 
         id = {item.id}
         image = {item.image}

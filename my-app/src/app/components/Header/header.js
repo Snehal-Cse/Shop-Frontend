@@ -48,7 +48,7 @@ export default function Header() {
      <div className=""><ThemeSwitcher /></div>
      <div className=" relative">
      <a href = "/cartPage"><FaCartShopping className = "text-2xl" /> </a>
-     <div className = "w-min  h-min p-0.5 bg-red-600 items-center text-xs justify-center absolute mt-[-2.3rem] ml-[1rem] text-center rounded-full text-white">{cart.length}</div>
+     <div className = "w-min  h-min p-0.5 bg-red-600 items-center text-xs justify-center absolute mt-[-2.3rem] ml-[1rem] text-center rounded-full text-white">{cart.length-1}</div>
      </div>
     <a href="/signup"> <Button radius="full" className="bg-white border-2 border-black font-bold text-black">
          Login

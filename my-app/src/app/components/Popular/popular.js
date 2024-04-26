@@ -1,8 +1,8 @@
 import React from "react";
-import dataProduct from "../Assets/data";
 import Item from "../Item/item"
+import AllProduct from "../Assets/allProduct";
 export default function Popular(){
-    const shop = dataProduct.map((item)=>{
+    const shop = AllProduct.slice(0,4).map((item)=>{
         return <Item  id ={item.id} 
         image = {item.image}
         desc = {item.desc}
